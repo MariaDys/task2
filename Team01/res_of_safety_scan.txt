@@ -1,0 +1,266 @@
+mariadyskina@Noutbuk-Maria Team01 % safety check -r requirements.txt
++=============================================================================================================+
+
+                               /$$$$$$            /$$
+                              /$$__  $$          | $$
+           /$$$$$$$  /$$$$$$ | $$  \__//$$$$$$  /$$$$$$   /$$   /$$
+          /$$_____/ |____  $$| $$$$   /$$__  $$|_  $$_/  | $$  | $$
+         |  $$$$$$   /$$$$$$$| $$_/  | $$$$$$$$  | $$    | $$  | $$
+          \____  $$ /$$__  $$| $$    | $$_____/  | $$ /$$| $$  | $$
+          /$$$$$$$/|  $$$$$$$| $$    |  $$$$$$$  |  $$$$/|  $$$$$$$
+         |_______/  \_______/|__/     \_______/   \___/   \____  $$
+                                                          /$$  | $$
+                                                         |  $$$$$$/
+  by safetycli.com                                        \______/
+
++=============================================================================================================+
+
+ REPORT 
+
+  Safety is using PyUp's free open-source vulnerability database. This data is 30 days old and
+limited. 
+  For real-time enhanced vulnerability data, fix recommendations, severity reporting, cybersecurity
+support, team and project policy management and more sign up at https://pyup.io or email sales@pyup.io
+
+  Safety v3.2.5 is scanning for Vulnerabilities...
+  Scanning dependencies in your files:
+
+  -> requirements.txt
+
+  Using open-source vulnerability database
+  Found and scanned 19 packages
+  Timestamp 2024-08-20 23:31:16
+  19 vulnerabilities reported
+  0 vulnerabilities ignored
+
++=============================================================================================================+
+ VULNERABILITIES REPORTED 
++=============================================================================================================+
+
+-> Vulnerability found in werkzeug version 2.3.7
+   Vulnerability ID: 62019
+   Affected spec: <2.3.8
+   ADVISORY: Werkzeug 3.0.1 and 2.3.8 include a security fix: Slow multipart parsing for large parts
+   potentially enabling DoS...
+   PVE-2023-62019
+   For more information about this vulnerability, visit https://data.safetycli.com/v/62019/97c
+   To ignore this vulnerability, use PyUp vulnerability id 62019 in safety’s ignore command-line argument or
+   add the ignore to your safety policy file.
+
+
+-> Vulnerability found in werkzeug version 2.3.7
+   Vulnerability ID: 71594
+   Affected spec: <3.0.3
+   ADVISORY: Werkzeug is a comprehensive WSGI web application library. The debugger in affected
+   versions of Werkzeug can allow an attacker to execute code on a developer's machine under some...
+   CVE-2024-34069
+   For more information about this vulnerability, visit https://data.safetycli.com/v/71594/97c
+   To ignore this vulnerability, use PyUp vulnerability id 71594 in safety’s ignore command-line argument or
+   add the ignore to your safety policy file.
+
+
+-> Vulnerability found in werkzeug version 2.3.7
+   Vulnerability ID: 71595
+   Affected spec: <=2.3.7
+   ADVISORY: Werkzeug is a comprehensive WSGI web application library. If an upload of a file that
+   starts with CR or LF and then is followed by megabytes of data without these characters: all of these...
+   CVE-2023-46136
+   For more information about this vulnerability, visit https://data.safetycli.com/v/71595/97c
+   To ignore this vulnerability, use PyUp vulnerability id 71595 in safety’s ignore command-line argument or
+   add the ignore to your safety policy file.
+
+
+-> Vulnerability found in jinja2 version 3.1.2
+   Vulnerability ID: 64227
+   Affected spec: <3.1.3
+   ADVISORY: Jinja2 before 3.1.3 is affected by a Cross-Site Scripting vulnerability. Special
+   placeholders in the template allow writing code similar to Python syntax. It is possible to inject...
+   CVE-2024-22195
+   For more information about this vulnerability, visit https://data.safetycli.com/v/64227/97c
+   To ignore this vulnerability, use PyUp vulnerability id 64227 in safety’s ignore command-line argument or
+   add the ignore to your safety policy file.
+
+
+-> Vulnerability found in jinja2 version 3.1.2
+   Vulnerability ID: 71591
+   Affected spec: <3.1.4
+   ADVISORY: Jinja is an extensible templating engine. The `xmlattr` filter in affected versions of
+   Jinja accepts keys containing non-attribute characters. XML/HTML attributes cannot contain spaces,...
+   CVE-2024-34064
+   For more information about this vulnerability, visit https://data.safetycli.com/v/71591/97c
+   To ignore this vulnerability, use PyUp vulnerability id 71591 in safety’s ignore command-line argument or
+   add the ignore to your safety policy file.
+
+
+-> Vulnerability found in jinja2 version 3.1.2
+   Vulnerability ID: 70612
+   Affected spec: >=0
+   ADVISORY: In Jinja2, the from_string function is prone to Server Side Template Injection (SSTI)
+   where it takes the source parameter as a template object, renders it, and then returns it. The...
+   CVE-2019-8341
+   For more information about this vulnerability, visit https://data.safetycli.com/v/70612/97c
+   To ignore this vulnerability, use PyUp vulnerability id 70612 in safety’s ignore command-line argument or
+   add the ignore to your safety policy file.
+
+
+-> Vulnerability found in gunicorn version 21.2.0
+   Vulnerability ID: 71600
+   Affected spec: <23.0.0
+   ADVISORY: Gunicorn fails to properly validate Transfer-Encoding headers, leading to HTTP Request
+   Smuggling (HRS) vulnerabilities. By crafting requests with conflicting Transfer-Encoding headers,...
+   CVE-2024-1135
+   For more information about this vulnerability, visit https://data.safetycli.com/v/71600/97c
+   To ignore this vulnerability, use PyUp vulnerability id 71600 in safety’s ignore command-line argument or
+   add the ignore to your safety policy file.
+
+
+-> Vulnerability found in cryptography version 41.0.3
+   Vulnerability ID: 65647
+   Affected spec: <42.0.5
+   ADVISORY: Cryptography version 42.0.5 introduces a limit on the number of name constraint checks
+   during X.509 path validation to prevent denial of service...
+   PVE-2024-65647
+   For more information about this vulnerability, visit https://data.safetycli.com/v/65647/97c
+   To ignore this vulnerability, use PyUp vulnerability id 65647 in safety’s ignore command-line argument or
+   add the ignore to your safety policy file.
+
+
+-> Vulnerability found in cryptography version 41.0.3
+   Vulnerability ID: 71681
+   Affected spec: <42.0.8
+   ADVISORY: The `cryptography` library has updated its BoringSSL and OpenSSL dependencies in CI due
+   to a security concern. Specifically, the issue involves the functions `EVP_PKEY_param_check()` and...
+   CVE-2024-4603
+   For more information about this vulnerability, visit https://data.safetycli.com/v/71681/97c
+   To ignore this vulnerability, use PyUp vulnerability id 71681 in safety’s ignore command-line argument or
+   add the ignore to your safety policy file.
+
+
+-> Vulnerability found in cryptography version 41.0.3
+   Vulnerability ID: 65278
+   Affected spec: <42.0.0
+   ADVISORY: A flaw was found in the python-cryptography package. This issue may allow a remote
+   attacker to decrypt captured messages in TLS servers that use RSA key exchanges, which may lead to...
+   CVE-2023-50782
+   For more information about this vulnerability, visit https://data.safetycli.com/v/65278/97c
+   To ignore this vulnerability, use PyUp vulnerability id 65278 in safety’s ignore command-line argument or
+   add the ignore to your safety policy file.
+
+
+-> Vulnerability found in cryptography version 41.0.3
+   Vulnerability ID: 65510
+   Affected spec: <42.0.0
+   ADVISORY: Cryptography starting from version 42.0.0 updates its CI configurations to use newer
+   versions of BoringSSL or OpenSSL as a countermeasure to CVE-2023-5678. This vulnerability, affecting...
+   CVE-2023-5678
+   For more information about this vulnerability, visit https://data.safetycli.com/v/65510/97c
+   To ignore this vulnerability, use PyUp vulnerability id 65510 in safety’s ignore command-line argument or
+   add the ignore to your safety policy file.
+
+
+-> Vulnerability found in cryptography version 41.0.3
+   Vulnerability ID: 66777
+   Affected spec: >=35.0.0,<42.0.2
+   ADVISORY: Checking excessively long invalid RSA public keys may take a long time. Applications
+   that use the function EVP_PKEY_public_check() to check RSA public keys may experience long delays....
+   CVE-2023-6237
+   For more information about this vulnerability, visit https://data.safetycli.com/v/66777/97c
+   To ignore this vulnerability, use PyUp vulnerability id 66777 in safety’s ignore command-line argument or
+   add the ignore to your safety policy file.
+
+
+-> Vulnerability found in cryptography version 41.0.3
+   Vulnerability ID: 65212
+   Affected spec: >=35.0.0,<42.0.2
+   ADVISORY: Versions of Cryptograph starting from 35.0.0 are susceptible to a security flaw in the
+   POLY1305 MAC algorithm on PowerPC CPUs, which allows an attacker to disrupt the application's state....
+   CVE-2023-6129
+   For more information about this vulnerability, visit https://data.safetycli.com/v/65212/97c
+   To ignore this vulnerability, use PyUp vulnerability id 65212 in safety’s ignore command-line argument or
+   add the ignore to your safety policy file.
+
+
+-> Vulnerability found in cryptography version 41.0.3
+   Vulnerability ID: 71684
+   Affected spec: >=35.0.0,<42.0.6
+   ADVISORY: The `cryptography` library updates its BoringSSL and OpenSSL dependencies in CI due to
+   a security concern. Specifically, certain non-default TLS server configurations can cause unbounded...
+   CVE-2024-2511
+   For more information about this vulnerability, visit https://data.safetycli.com/v/71684/97c
+   To ignore this vulnerability, use PyUp vulnerability id 71684 in safety’s ignore command-line argument or
+   add the ignore to your safety policy file.
+
+
+-> Vulnerability found in cryptography version 41.0.3
+   Vulnerability ID: 66704
+   Affected spec: >=38.0.0,<42.0.4
+   ADVISORY: cryptography is a package designed to expose cryptographic primitives and recipes to
+   Python developers. Starting in version 38.0.0 and before version 42.0.4, if...
+   CVE-2024-26130
+   For more information about this vulnerability, visit https://data.safetycli.com/v/66704/97c
+   To ignore this vulnerability, use PyUp vulnerability id 66704 in safety’s ignore command-line argument or
+   add the ignore to your safety policy file.
+
+
+-> Vulnerability found in cryptography version 41.0.3
+   Vulnerability ID: 62451
+   Affected spec: <41.0.4
+   ADVISORY: Cryptography 41.0.4 updates Windows, macOS, and Linux wheels to be compiled with
+   OpenSSL 3.1.3, that includes a security...
+   CVE-2023-4807
+   For more information about this vulnerability, visit https://data.safetycli.com/v/62451/97c
+   To ignore this vulnerability, use PyUp vulnerability id 62451 in safety’s ignore command-line argument or
+   add the ignore to your safety policy file.
+
+
+-> Vulnerability found in cryptography version 41.0.3
+   Vulnerability ID: 62452
+   Affected spec: <41.0.5
+   ADVISORY: Cryptography 41.0.5 updates Windows, macOS, and Linux wheels to be compiled with
+   OpenSSL 3.1.4, that includes a security fix.
+   CVE-2023-5363
+   For more information about this vulnerability, visit https://data.safetycli.com/v/62452/97c
+   To ignore this vulnerability, use PyUp vulnerability id 62452 in safety’s ignore command-line argument or
+   add the ignore to your safety policy file.
+
+
+-> Vulnerability found in cryptography version 41.0.3
+   Vulnerability ID: 62556
+   Affected spec: >=3.1,<41.0.6
+   ADVISORY: Cryptography 41.0.6 includes a fix for CVE-2023-49083: NULL-dereference when loading
+   PKCS7 certificates.https://github.com/advisories/GHSA-jfhm-5ghh-2f97
+   CVE-2023-49083
+   For more information about this vulnerability, visit https://data.safetycli.com/v/62556/97c
+   To ignore this vulnerability, use PyUp vulnerability id 62556 in safety’s ignore command-line argument or
+   add the ignore to your safety policy file.
+
+
+-> Vulnerability found in cryptography version 41.0.3
+   Vulnerability ID: 71680
+   Affected spec: <42.0.2
+   ADVISORY: The cryptography library has updated its OpenSSL dependency in CI due to security
+   concerns. This vulnerability arises when processing maliciously formatted PKCS12 files, which can...
+   CVE-2024-0727
+   For more information about this vulnerability, visit https://data.safetycli.com/v/71680/97c
+   To ignore this vulnerability, use PyUp vulnerability id 71680 in safety’s ignore command-line argument or
+   add the ignore to your safety policy file.
+
+
++=============================================================================================================+
+   REMEDIATIONS
+
+  19 vulnerabilities were reported in 4 packages. For detailed remediation & fix recommendations, upgrade to 
+  a commercial license. 
+
++=============================================================================================================+
+
+ Scan was completed. 19 vulnerabilities were reported. 
+
++=============================================================================================================+
+
+  Safety is using PyUp's free open-source vulnerability database. This data is 30 days old and
+limited. 
+  For real-time enhanced vulnerability data, fix recommendations, severity reporting, cybersecurity
+support, team and project policy management and more sign up at https://pyup.io or email sales@pyup.io
+
++=============================================================================================================+
